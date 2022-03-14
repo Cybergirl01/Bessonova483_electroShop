@@ -38,21 +38,23 @@
             this.clientsTableAdapter2 = new Bessonova483_ElectroShop.Bessonova483_ElectroShopDataSetTableAdapters.ClientsTableAdapter();
             this.objectsTableAdapter1 = new Bessonova483_ElectroShop.Bessonova483_ElectroShopDataSetTableAdapters.ObjectsTableAdapter();
             this.objectsTableAdapter2 = new Bessonova483_ElectroShop.Bessonova483_ElectroShopDataSethomeTableAdapters.ObjectsTableAdapter();
-            this.groupBoxObject = new System.Windows.Forms.GroupBox();
-            this.labelItogo = new System.Windows.Forms.Label();
-            this.labelSum = new System.Windows.Forms.Label();
-            this.numericUpDownCount = new System.Windows.Forms.NumericUpDown();
-            this.labelCount = new System.Windows.Forms.Label();
-            this.comboBoxObject = new System.Windows.Forms.ComboBox();
-            this.labelObject = new System.Windows.Forms.Label();
             this.comboBoxClient = new System.Windows.Forms.ComboBox();
             this.labelCLient = new System.Windows.Forms.Label();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.labelFinalSum = new System.Windows.Forms.Label();
-            this.textBoxFInalSum = new System.Windows.Forms.TextBox();
-            this.groupBoxObject.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCount)).BeginInit();
+            this.textBoxItog = new System.Windows.Forms.TextBox();
+            this.numericUpDownCount = new System.Windows.Forms.NumericUpDown();
+            this.labelCount = new System.Windows.Forms.Label();
+            this.dataGridViewObjects = new System.Windows.Forms.DataGridView();
+            this.textBoxObject = new System.Windows.Forms.TextBox();
+            this.labelObject = new System.Windows.Forms.Label();
+            this.textBoxID = new System.Windows.Forms.TextBox();
+            this.labelID = new System.Windows.Forms.Label();
+            this.textBoxCost = new System.Windows.Forms.TextBox();
+            this.labelCost = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewObjects)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonBack
@@ -64,6 +66,7 @@
             this.buttonBack.TabIndex = 37;
             this.buttonBack.Text = "Назад";
             this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // labelObjectsOrder
             // 
@@ -110,78 +113,11 @@
             // 
             this.objectsTableAdapter2.ClearBeforeFill = true;
             // 
-            // groupBoxObject
-            // 
-            this.groupBoxObject.Controls.Add(this.labelItogo);
-            this.groupBoxObject.Controls.Add(this.labelSum);
-            this.groupBoxObject.Controls.Add(this.numericUpDownCount);
-            this.groupBoxObject.Controls.Add(this.labelCount);
-            this.groupBoxObject.Controls.Add(this.comboBoxObject);
-            this.groupBoxObject.Controls.Add(this.labelObject);
-            this.groupBoxObject.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBoxObject.Location = new System.Drawing.Point(13, 109);
-            this.groupBoxObject.Name = "groupBoxObject";
-            this.groupBoxObject.Size = new System.Drawing.Size(400, 201);
-            this.groupBoxObject.TabIndex = 39;
-            this.groupBoxObject.TabStop = false;
-            this.groupBoxObject.Text = "Товар";
-            // 
-            // labelItogo
-            // 
-            this.labelItogo.AutoSize = true;
-            this.labelItogo.Location = new System.Drawing.Point(136, 154);
-            this.labelItogo.Name = "labelItogo";
-            this.labelItogo.Size = new System.Drawing.Size(0, 21);
-            this.labelItogo.TabIndex = 5;
-            // 
-            // labelSum
-            // 
-            this.labelSum.AutoSize = true;
-            this.labelSum.Location = new System.Drawing.Point(18, 154);
-            this.labelSum.Name = "labelSum";
-            this.labelSum.Size = new System.Drawing.Size(99, 21);
-            this.labelSum.TabIndex = 4;
-            this.labelSum.Text = "Стоимость";
-            // 
-            // numericUpDownCount
-            // 
-            this.numericUpDownCount.Location = new System.Drawing.Point(156, 105);
-            this.numericUpDownCount.Name = "numericUpDownCount";
-            this.numericUpDownCount.Size = new System.Drawing.Size(120, 29);
-            this.numericUpDownCount.TabIndex = 3;
-            // 
-            // labelCount
-            // 
-            this.labelCount.AutoSize = true;
-            this.labelCount.Location = new System.Drawing.Point(18, 107);
-            this.labelCount.Name = "labelCount";
-            this.labelCount.Size = new System.Drawing.Size(105, 21);
-            this.labelCount.TabIndex = 2;
-            this.labelCount.Text = "Количество";
-            // 
-            // comboBoxObject
-            // 
-            this.comboBoxObject.FormattingEnabled = true;
-            this.comboBoxObject.Location = new System.Drawing.Point(156, 41);
-            this.comboBoxObject.Name = "comboBoxObject";
-            this.comboBoxObject.Size = new System.Drawing.Size(238, 29);
-            this.comboBoxObject.TabIndex = 1;
-            this.comboBoxObject.SelectedIndexChanged += new System.EventHandler(this.comboBoxObject_SelectedIndexChanged);
-            // 
-            // labelObject
-            // 
-            this.labelObject.AutoSize = true;
-            this.labelObject.Location = new System.Drawing.Point(7, 42);
-            this.labelObject.Name = "labelObject";
-            this.labelObject.Size = new System.Drawing.Size(142, 21);
-            this.labelObject.TabIndex = 0;
-            this.labelObject.Text = "Название товара";
-            // 
             // comboBoxClient
             // 
             this.comboBoxClient.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBoxClient.FormattingEnabled = true;
-            this.comboBoxClient.Location = new System.Drawing.Point(495, 138);
+            this.comboBoxClient.Location = new System.Drawing.Point(557, 57);
             this.comboBoxClient.Name = "comboBoxClient";
             this.comboBoxClient.Size = new System.Drawing.Size(220, 29);
             this.comboBoxClient.TabIndex = 40;
@@ -190,7 +126,7 @@
             // 
             this.labelCLient.AutoSize = true;
             this.labelCLient.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelCLient.Location = new System.Drawing.Point(436, 146);
+            this.labelCLient.Location = new System.Drawing.Point(498, 65);
             this.labelCLient.Name = "labelCLient";
             this.labelCLient.Size = new System.Drawing.Size(53, 21);
             this.labelCLient.TabIndex = 6;
@@ -210,30 +146,120 @@
             // 
             this.labelFinalSum.AutoSize = true;
             this.labelFinalSum.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelFinalSum.Location = new System.Drawing.Point(27, 319);
+            this.labelFinalSum.Location = new System.Drawing.Point(22, 399);
             this.labelFinalSum.Name = "labelFinalSum";
             this.labelFinalSum.Size = new System.Drawing.Size(63, 21);
             this.labelFinalSum.TabIndex = 6;
             this.labelFinalSum.Text = "Итого:";
             // 
-            // textBoxFInalSum
+            // textBoxItog
             // 
-            this.textBoxFInalSum.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxFInalSum.Location = new System.Drawing.Point(105, 316);
-            this.textBoxFInalSum.Name = "textBoxFInalSum";
-            this.textBoxFInalSum.Size = new System.Drawing.Size(155, 29);
-            this.textBoxFInalSum.TabIndex = 42;
+            this.textBoxItog.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxItog.Location = new System.Drawing.Point(163, 396);
+            this.textBoxItog.Name = "textBoxItog";
+            this.textBoxItog.Size = new System.Drawing.Size(155, 29);
+            this.textBoxItog.TabIndex = 42;
+            // 
+            // numericUpDownCount
+            // 
+            this.numericUpDownCount.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.numericUpDownCount.Location = new System.Drawing.Point(668, 224);
+            this.numericUpDownCount.Name = "numericUpDownCount";
+            this.numericUpDownCount.Size = new System.Drawing.Size(120, 29);
+            this.numericUpDownCount.TabIndex = 3;
+            this.numericUpDownCount.ValueChanged += new System.EventHandler(this.numericUpDownCount_ValueChanged);
+            // 
+            // labelCount
+            // 
+            this.labelCount.AutoSize = true;
+            this.labelCount.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelCount.Location = new System.Drawing.Point(520, 232);
+            this.labelCount.Name = "labelCount";
+            this.labelCount.Size = new System.Drawing.Size(105, 21);
+            this.labelCount.TabIndex = 43;
+            this.labelCount.Text = "Количество";
+            // 
+            // dataGridViewObjects
+            // 
+            this.dataGridViewObjects.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewObjects.Location = new System.Drawing.Point(13, 109);
+            this.dataGridViewObjects.Name = "dataGridViewObjects";
+            this.dataGridViewObjects.Size = new System.Drawing.Size(400, 281);
+            this.dataGridViewObjects.TabIndex = 44;
+            this.dataGridViewObjects.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewObjects_RowEnter);
+            // 
+            // textBoxObject
+            // 
+            this.textBoxObject.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxObject.Location = new System.Drawing.Point(636, 128);
+            this.textBoxObject.Name = "textBoxObject";
+            this.textBoxObject.Size = new System.Drawing.Size(155, 29);
+            this.textBoxObject.TabIndex = 46;
+            // 
+            // labelObject
+            // 
+            this.labelObject.AutoSize = true;
+            this.labelObject.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelObject.Location = new System.Drawing.Point(512, 131);
+            this.labelObject.Name = "labelObject";
+            this.labelObject.Size = new System.Drawing.Size(58, 21);
+            this.labelObject.TabIndex = 45;
+            this.labelObject.Text = "Товар";
+            // 
+            // textBoxID
+            // 
+            this.textBoxID.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxID.Location = new System.Drawing.Point(633, 174);
+            this.textBoxID.Name = "textBoxID";
+            this.textBoxID.Size = new System.Drawing.Size(155, 29);
+            this.textBoxID.TabIndex = 48;
+            // 
+            // labelID
+            // 
+            this.labelID.AutoSize = true;
+            this.labelID.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelID.Location = new System.Drawing.Point(530, 182);
+            this.labelID.Name = "labelID";
+            this.labelID.Size = new System.Drawing.Size(63, 21);
+            this.labelID.TabIndex = 47;
+            this.labelID.Text = "Номер";
+            // 
+            // textBoxCost
+            // 
+            this.textBoxCost.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxCost.Location = new System.Drawing.Point(636, 282);
+            this.textBoxCost.Name = "textBoxCost";
+            this.textBoxCost.Size = new System.Drawing.Size(155, 29);
+            this.textBoxCost.TabIndex = 50;
+            // 
+            // labelCost
+            // 
+            this.labelCost.AutoSize = true;
+            this.labelCost.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelCost.Location = new System.Drawing.Point(530, 285);
+            this.labelCost.Name = "labelCost";
+            this.labelCost.Size = new System.Drawing.Size(49, 21);
+            this.labelCost.TabIndex = 49;
+            this.labelCost.Text = "Цена";
             // 
             // FormOrders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBoxFInalSum);
+            this.Controls.Add(this.textBoxCost);
+            this.Controls.Add(this.labelCost);
+            this.Controls.Add(this.textBoxID);
+            this.Controls.Add(this.labelID);
+            this.Controls.Add(this.textBoxObject);
+            this.Controls.Add(this.labelObject);
+            this.Controls.Add(this.dataGridViewObjects);
+            this.Controls.Add(this.labelCount);
+            this.Controls.Add(this.textBoxItog);
             this.Controls.Add(this.labelFinalSum);
+            this.Controls.Add(this.numericUpDownCount);
             this.Controls.Add(this.labelCLient);
             this.Controls.Add(this.comboBoxClient);
-            this.Controls.Add(this.groupBoxObject);
             this.Controls.Add(this.buttonFormOrder);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.labelObjectsOrder);
@@ -242,10 +268,9 @@
             this.Name = "FormOrders";
             this.Text = "Заказы";
             this.Load += new System.EventHandler(this.FormOrders_Load);
-            this.groupBoxObject.ResumeLayout(false);
-            this.groupBoxObject.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewObjects)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -263,16 +288,18 @@
         private Bessonova483_ElectroShopDataSetTableAdapters.ClientsTableAdapter clientsTableAdapter2;
         private Bessonova483_ElectroShopDataSetTableAdapters.ObjectsTableAdapter objectsTableAdapter1;
         private Bessonova483_ElectroShopDataSethomeTableAdapters.ObjectsTableAdapter objectsTableAdapter2;
-        private System.Windows.Forms.GroupBox groupBoxObject;
-        private System.Windows.Forms.NumericUpDown numericUpDownCount;
-        private System.Windows.Forms.Label labelCount;
-        private System.Windows.Forms.ComboBox comboBoxObject;
-        private System.Windows.Forms.Label labelObject;
-        private System.Windows.Forms.Label labelSum;
-        private System.Windows.Forms.Label labelItogo;
         private System.Windows.Forms.ComboBox comboBoxClient;
         private System.Windows.Forms.Label labelCLient;
         private System.Windows.Forms.Label labelFinalSum;
-        private System.Windows.Forms.TextBox textBoxFInalSum;
+        private System.Windows.Forms.TextBox textBoxItog;
+        private System.Windows.Forms.NumericUpDown numericUpDownCount;
+        private System.Windows.Forms.Label labelCount;
+        private System.Windows.Forms.DataGridView dataGridViewObjects;
+        private System.Windows.Forms.TextBox textBoxObject;
+        private System.Windows.Forms.Label labelObject;
+        private System.Windows.Forms.TextBox textBoxID;
+        private System.Windows.Forms.Label labelID;
+        private System.Windows.Forms.TextBox textBoxCost;
+        private System.Windows.Forms.Label labelCost;
     }
 }

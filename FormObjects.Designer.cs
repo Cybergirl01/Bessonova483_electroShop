@@ -36,7 +36,6 @@
             this.labelObjects = new System.Windows.Forms.Label();
             this.comboBoxCategory = new System.Windows.Forms.ComboBox();
             this.labelCategory = new System.Windows.Forms.Label();
-            this.listViewObjects = new System.Windows.Forms.ListView();
             this.buttonOrder = new System.Windows.Forms.Button();
             this.categoryTableAdapter1 = new Bessonova483_ElectroShop.Bessonova483_ElectroShopDataSetTableAdapters.CategoryTableAdapter();
             this.categoryTableAdapter2 = new Bessonova483_ElectroShop.Bessonova483_ElectroShopDataSethomeTableAdapters.CategoryTableAdapter();
@@ -44,7 +43,9 @@
             this.labelSearch = new System.Windows.Forms.Label();
             this.imageListObject = new System.Windows.Forms.ImageList(this.components);
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.dataGridViewObjects = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewObjects)).BeginInit();
             this.SuspendLayout();
             // 
             // objectsTableAdapter1
@@ -95,15 +96,6 @@
             this.labelCategory.Size = new System.Drawing.Size(94, 21);
             this.labelCategory.TabIndex = 36;
             this.labelCategory.Text = "Категория";
-            // 
-            // listViewObjects
-            // 
-            this.listViewObjects.HideSelection = false;
-            this.listViewObjects.Location = new System.Drawing.Point(12, 121);
-            this.listViewObjects.Name = "listViewObjects";
-            this.listViewObjects.Size = new System.Drawing.Size(776, 261);
-            this.listViewObjects.TabIndex = 37;
-            this.listViewObjects.UseCompatibleStateImageBehavior = false;
             // 
             // buttonOrder
             // 
@@ -159,15 +151,23 @@
             this.pictureBoxLogo.TabIndex = 32;
             this.pictureBoxLogo.TabStop = false;
             // 
+            // dataGridViewObjects
+            // 
+            this.dataGridViewObjects.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewObjects.Location = new System.Drawing.Point(13, 125);
+            this.dataGridViewObjects.Name = "dataGridViewObjects";
+            this.dataGridViewObjects.Size = new System.Drawing.Size(775, 265);
+            this.dataGridViewObjects.TabIndex = 41;
+            // 
             // FormObjects
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataGridViewObjects);
             this.Controls.Add(this.textBoxSearch);
             this.Controls.Add(this.labelSearch);
             this.Controls.Add(this.buttonOrder);
-            this.Controls.Add(this.listViewObjects);
             this.Controls.Add(this.labelCategory);
             this.Controls.Add(this.comboBoxCategory);
             this.Controls.Add(this.buttonBack);
@@ -178,6 +178,7 @@
             this.Text = "Товары";
             this.Load += new System.EventHandler(this.FormObjects_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewObjects)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,12 +193,12 @@
         private System.Windows.Forms.PictureBox pictureBoxLogo;
         private System.Windows.Forms.ComboBox comboBoxCategory;
         private System.Windows.Forms.Label labelCategory;
-        private System.Windows.Forms.ListView listViewObjects;
         private System.Windows.Forms.Button buttonOrder;
         private Bessonova483_ElectroShopDataSetTableAdapters.CategoryTableAdapter categoryTableAdapter1;
         private Bessonova483_ElectroShopDataSethomeTableAdapters.CategoryTableAdapter categoryTableAdapter2;
         private System.Windows.Forms.TextBox textBoxSearch;
         private System.Windows.Forms.Label labelSearch;
         private System.Windows.Forms.ImageList imageListObject;
+        private System.Windows.Forms.DataGridView dataGridViewObjects;
     }
 }

@@ -87,7 +87,7 @@ namespace Bessonova483_ElectroShop
             checkBoxStatus.Checked = rowUser.Active;
             //Настройка списков
 
-            comboBoxGender.DataSource = genderTableAdapter2.GetData();
+            comboBoxGender.DataSource = genderTableAdapter1.GetData();
             comboBoxGender.DisplayMember = "Title";
             comboBoxGender.ValueMember = "ID";
 

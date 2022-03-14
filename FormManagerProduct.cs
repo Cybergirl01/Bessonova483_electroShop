@@ -78,15 +78,15 @@ namespace Bessonova483_ElectroShop
             this.Show();
         }
         /// <summary>
-        /// Открытие формы заказов
+        /// Открытие формы каталога
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void buttonOrders_Click(object sender, EventArgs e)
         {
-            FormOrders fOrders = new FormOrders();
+            FormObjects fOb = new FormObjects();
             this.Hide();
-            fOrders.ShowDialog();
+            fOb.ShowDialog();
             this.Show();
         }
     }

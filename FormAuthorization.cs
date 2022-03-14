@@ -40,7 +40,7 @@ namespace Bessonova483_ElectroShop
                 MessageBox.Show("Таких данных нет.");
                 try
                 {
-                    historyLoginTableAdapter2.Insert(log, span, false);
+                    historyLoginTableAdapter1.Insert(log, span, false);
                 }
                 catch
                 {
@@ -76,7 +76,7 @@ namespace Bessonova483_ElectroShop
             {
                 try
                 {
-                    historyLoginTableAdapter2.Insert(log, span, true);
+                    historyLoginTableAdapter1.Insert(log, span, true);
                 }
                 catch
                 {
