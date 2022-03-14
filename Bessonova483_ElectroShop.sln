@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bessonova483_ElectroShop", "Bessonova483_ElectroShop.csproj", "{1389FDFC-B46B-4749-A8B7-FF61A3295F74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject", "..\UnitTestProject\UnitTestProject.csproj", "{239D3CAF-9048-41ED-A989-A3DB5DB58012}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupElectroShop", "..\SetupElectroShop\SetupElectroShop.vdproj", "{10D2738E-DA29-49CF-B6E4-1FF5B772D2F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1389FDFC-B46B-4749-A8B7-FF61A3295F74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1389FDFC-B46B-4749-A8B7-FF61A3295F74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1389FDFC-B46B-4749-A8B7-FF61A3295F74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1389FDFC-B46B-4749-A8B7-FF61A3295F74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{239D3CAF-9048-41ED-A989-A3DB5DB58012}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{239D3CAF-9048-41ED-A989-A3DB5DB58012}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{239D3CAF-9048-41ED-A989-A3DB5DB58012}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{239D3CAF-9048-41ED-A989-A3DB5DB58012}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10D2738E-DA29-49CF-B6E4-1FF5B772D2F4}.Debug|Any CPU.ActiveCfg = Debug
+		{10D2738E-DA29-49CF-B6E4-1FF5B772D2F4}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58E89A7A-7CAA-497A-A819-023327FEB67B}
+	EndGlobalSection
+EndGlobal
