@@ -66,7 +66,7 @@ namespace Bessonova483_ElectroShop
             this.Show();
         }
 /// <summary>
-/// Открытие формы к каталогу
+/// Открытие формы к каталогу товаров
 /// </summary>
 /// <param name="sender"></param>
 /// <param name="e"></param>
